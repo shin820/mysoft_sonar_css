@@ -20,50 +20,50 @@
 package org.sonar.css.checks;
 
 import com.google.common.collect.ImmutableList;
-import org.mysoft.sonar.css.checks.DisallowMicrosoftFeatures;
+import org.mysoft.sonar.css.checks.ClassSelectorRegExpCheck;
 
 import java.util.Collection;
 
 public final class CheckList {
 
-  public static final String REPOSITORY_KEY = "css";
+    public static final String REPOSITORY_KEY = "css";
 
-  public static final String REPOSITORY_NAME = "Sonar";
+    public static final String REPOSITORY_NAME = "Sonar";
 
-  private CheckList() {
-  }
+    private CheckList() {
+    }
 
-  @SuppressWarnings("rawtypes")
-  public static Collection<Class> getChecks() {
-    return ImmutableList.<Class> of(
+    @SuppressWarnings("rawtypes")
+    public static Collection<Class> getChecks() {
+        return ImmutableList.<Class>of(
         /*Mysoft rules begin*/
-        DisallowMicrosoftFeatures.class,
+                ClassSelectorRegExpCheck.class,
         /*Mysoft rules end*/
 
-        AllGradientDefinitions.class,
-        BulletproofFontFace.class,
-        BewareOfBoxModel.class,
-        CompatibleVendorPrefixes.class,
-        DisallowDuplicateBackgroundImages.class,
-        DisallowEmptyRules.class,
-        DisallowIdsInSelectors.class,
-        DisallowImport.class,
-        DisallowImportant.class,
-        DisallowOverqualifiedElements.class,
-        DisallowOverspecificSelectors.class,
-        DisallowSelectorsLikeRegEx.class,
-        DisallowStarHack.class,
-        DisallowUnderscoreHack.class,
-        DisallowUnitsForZeroValues.class,
-        DisallowUniversalSelector.class,
-        DisplayPropertyGrouping.class,
-        DuplicateProperties.class,
-        KnownProperties.class,
-        ShorthandProperties.class,
-        TooManyWebFonts.class,
-        VendorPrefixWithStandard.class
+                AllGradientDefinitions.class,
+                BulletproofFontFace.class,
+                BewareOfBoxModel.class,
+                CompatibleVendorPrefixes.class,
+                DisallowDuplicateBackgroundImages.class,
+                DisallowEmptyRules.class,
+                DisallowIdsInSelectors.class,
+                DisallowImport.class,
+                DisallowImportant.class,
+                DisallowOverqualifiedElements.class,
+                DisallowOverspecificSelectors.class,
+                DisallowSelectorsLikeRegEx.class,
+                DisallowStarHack.class,
+                DisallowUnderscoreHack.class,
+                DisallowUnitsForZeroValues.class,
+                DisallowUniversalSelector.class,
+                DisplayPropertyGrouping.class,
+                DuplicateProperties.class,
+                KnownProperties.class,
+                ShorthandProperties.class,
+                TooManyWebFonts.class,
+                VendorPrefixWithStandard.class
         );
-  }
+    }
 
 }
 

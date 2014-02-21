@@ -55,6 +55,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/css-checks/src/test/java/mysoft/sonar/css/checks/ClassSelectorRegExpCheckTest.java" line="36" class="mysoft.sonar.css.checks.ClassSelectorRegExpCheckTest" package="mysoft.sonar.css.checks">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -64,95 +81,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BewareOfBoxModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/BewareOfBoxModel.java">
+      <file leaf-file-name="ClassSelectorRegExpCheckTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css-checks/src/test/java/mysoft/sonar/css/checks/ClassSelectorRegExpCheckTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="58" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+            <state line="35" column="17" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css-checks/src/main/resources/org/sonar/l10n/css.properties">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css-checks/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+            <state line="6" column="17" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SassGrammar.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/parser/SassGrammar.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="18" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="1165" max-vertical-offset="4123">
+            <state line="10" column="23" selection-start="430" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3800">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overspecific-selectors.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css-checks/src/main/resources/org/sonar/l10n/css/rules/css/overspecific-selectors.html">
+      <file leaf-file-name="ClassSelectorRegExpCheck.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css-checks/src/test/resources/mysoft.checks/ClassSelectorRegExpCheck.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="304">
+            <state line="6" column="2" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisallowMicrosoftFeatures.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/mysoft/sonar/css/checks/DisallowMicrosoftFeatures.java">
+      <file leaf-file-name="ClassSelectorRegExpCheck.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/mysoft/sonar/css/checks/ClassSelectorRegExpCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="51" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.3011811" vertical-offset="626" max-vertical-offset="1178">
+            <state line="49" column="0" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.5589942" vertical-offset="148" max-vertical-offset="893">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllGradientDefinitions.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/AllGradientDefinitions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="0" selection-start="2133" selection-end="2133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisallowIdsInSelectors.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowIdsInSelectors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="24" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/CheckList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="1398" selection-end="1398" vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1083">
               <folding>
-                <element signature="e#0#1873#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#1279#1286#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rule.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sonar-check-api/3.0/sonar-check-api-3.0.jar!/org/sonar/check/Rule.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="-2.6" vertical-offset="68" max-vertical-offset="551">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CssProperties.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/utils/CssProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="19" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0" vertical-offset="7659" max-vertical-offset="8189">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CssProperty.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/utils/CssProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="13" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1045">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css-model.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/resources/com/sonar/sqale/css-model.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="302" column="17" selection-start="9725" selection-end="9725" vertical-scroll-proportion="-14.04" vertical-offset="5387" max-vertical-offset="7467">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="overspecselector.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css-checks/src/test/resources/checks/overspecselector.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -167,14 +166,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/parser/CssGrammar.java" />
         <option value="$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/cpd/CssTokenizer.java" />
-        <option value="$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/CheckList.java" />
         <option value="$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowSelectorsLikeRegEx.java" />
         <option value="$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowMicrosoftFeatures.java" />
         <option value="$PROJECT_DIR$/sonar-css-plugin/src/main/resources/com/sonar/sqale/css-model.xml" />
         <option value="$PROJECT_DIR$/css-checks/src/main/resources/org/sonar/l10n/css.properties" />
         <option value="$PROJECT_DIR$/css-checks/src/main/java/org/mysoft/sonar/css/checks/DisallowMicrosoftFeatures.java" />
+        <option value="$PROJECT_DIR$/css-checks/src/test/java/mysoft/sonar/css/checks/DisallowMicrosoftFeaturesTest.java" />
+        <option value="$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/parser/CssGrammar.java" />
+        <option value="$PROJECT_DIR$/css-checks/src/test/resources/mysoft.checks/SelectorRegExpCheck.css" />
+        <option value="$PROJECT_DIR$/css-checks/src/test/java/mysoft/sonar/css/checks/SelectorRegExpCheckTest.java" />
+        <option value="$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/CheckList.java" />
+        <option value="$PROJECT_DIR$/css-checks/src/main/java/org/mysoft/sonar/css/checks/SelectorRegExpCheck.java" />
+        <option value="$PROJECT_DIR$/css-checks/src/test/java/mysoft/sonar/css/checks/ClassSelectorRegExpCheckTest.java" />
+        <option value="$PROJECT_DIR$/css-checks/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/css-checks/src/main/java/org/mysoft/sonar/css/checks/ClassSelectorRegExpCheck.java" />
       </list>
     </option>
   </component>
@@ -183,6 +190,22 @@
     <option name="y" value="-8" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -228,7 +251,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,41 +261,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sslr-css-toolkit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sslr-css-toolkit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="toolkit" />
+              <option name="myItemId" value="css-squid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,11 +275,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-plugin" />
+              <option name="myItemId" value="css-checks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,11 +289,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-plugin" />
+              <option name="myItemId" value="css-checks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -314,11 +307,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-plugin" />
+              <option name="myItemId" value="css-checks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -326,7 +319,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -334,7 +327,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sqale" />
+              <option name="myItemId" value="mysoft.checks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,11 +337,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-plugin" />
+              <option name="myItemId" value="css-checks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -356,15 +349,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,45 +363,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-plugin" />
+              <option name="myItemId" value="css-checks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -420,15 +375,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -442,43 +393,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css-squid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css-squid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css-squid" />
+              <option name="myItemId" value="css-checks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -486,7 +405,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -494,7 +413,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="checks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -504,73 +423,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css-squid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css-checks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css-checks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -585,14 +438,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="l10n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -600,41 +445,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css-checks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="l10n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -657,6 +468,10 @@
               <option name="myItemId" value="org" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="checks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -664,7 +479,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sonar-css-master" />
+              <option name="myItemId" value="mysoft_sonar_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -706,19 +521,28 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="D:/Sonar Plugin Sources/Sonar-css-master/mysoft-sonar-css/testing.sonar-css-plugin" />
+    <property name="last_opened_file_path" value="D:/Sonar Plugin Sources/sonar-web-master/mysoft_sonar_web" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
+    <property name="options.lastSelected" value="coverage" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.mysoft.sonar.css.checks" />
+      <recent name="mysoft.sonar.css.checks" />
       <recent name="org.sonar.css.checks" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\sonar-css-master\mysoft_sonar_css\css-checks\src\test\resources\mysoft.checks" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.mysoft.sonar.css.checks" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CssSquidSensorTest">
+  <component name="RunManager">
     <configuration default="false" name="CssSquidSensorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -731,6 +555,68 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.sonar.plugins.css" />
       <option name="MAIN_CLASS_NAME" value="org.sonar.plugins.css.CssSquidSensorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ClassSelectorRegExpCheckTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="mysoft.sonar.css.checks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="css-checks" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mysoft.sonar.css.checks" />
+      <option name="MAIN_CLASS_NAME" value="mysoft.sonar.css.checks.ClassSelectorRegExpCheckTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ClassSelectorRegExpCheckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="mysoft.sonar.css.checks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="css-checks" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mysoft.sonar.css.checks" />
+      <option name="MAIN_CLASS_NAME" value="mysoft.sonar.css.checks.ClassSelectorRegExpCheckTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -958,12 +844,16 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CssSquidSensorTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ClassSelectorRegExpCheckTest.test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ClassSelectorRegExpCheckTest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CssSquidSensorTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClassSelectorRegExpCheckTest.test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ClassSelectorRegExpCheckTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CssSquidSensorTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -978,42 +868,43 @@
       <created>1392889830772</created>
       <updated>1392889830772</updated>
       <workItem from="1392889833404" duration="5826000" />
+      <workItem from="1392945595937" duration="8481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5826000" />
+    <option name="totallyTimeSpent" value="14307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298611" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39930555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1032,84 +923,23 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="css" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mysoft_sonar_css" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/test/java/org/sonar/plugins/css/CssPluginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/test/java/org/sonar/plugins/css/CssSquidSensorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="3" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="1159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/core/CssSourceImporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/core/Css.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/CssCommonRulesEngineProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="13" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/CssPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="741">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/CssProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="13" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
-          <folding>
-            <element signature="e#0#1932#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sslr-squid-bridge/sslr-squid-bridge/2.3/sslr-squid-bridge-2.3.jar!/com/sonar/sslr/squid/AstScanner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="951" selection-end="951" vertical-scroll-proportion="0.3495935" vertical-offset="208" max-vertical-offset="1026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/CssSquidSensor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="24" selection-start="3222" selection-end="3222" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1691">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sonar-plugin-api/3.7/sonar-plugin-api-3.7.jar!/org/sonar/api/scan/filesystem/ModuleFileSystem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="589" selection-end="589" vertical-scroll-proportion="0.71089107" vertical-offset="2" max-vertical-offset="532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/TooManyWebFonts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="13" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1083">
@@ -1134,30 +964,22 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sslr/sslr-core/1.19.2/sslr-core-1.19.2.jar!/org/sonar/sslr/parser/ParserAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="470" selection-end="470" vertical-scroll-proportion="0.38617885" vertical-offset="0" max-vertical-offset="589">
-          <folding />
-        </state>
+        <state line="11" column="11" selection-start="470" selection-end="470" vertical-scroll-proportion="0.38617885" vertical-offset="0" max-vertical-offset="589" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/cpd/CssCpdMapping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="21" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
-          <folding />
-        </state>
+        <state line="40" column="21" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sslr/sslr-core/1.19.2/sslr-core-1.19.2.jar!/org/sonar/sslr/grammar/LexerlessGrammarBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="53" selection-start="865" selection-end="865" vertical-scroll-proportion="0.3495935" vertical-offset="113" max-vertical-offset="722">
-          <folding />
-        </state>
+        <state line="16" column="53" selection-start="865" selection-end="865" vertical-scroll-proportion="0.3495935" vertical-offset="113" max-vertical-offset="722" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sonar-duplications/3.7/sonar-duplications-3.7.jar!/net/sourceforge/pmd/cpd/SourceCode.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="166" selection-end="166" vertical-scroll-proportion="0.17227723" vertical-offset="8" max-vertical-offset="1197">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="166" selection-end="166" vertical-scroll-proportion="0.17227723" vertical-offset="8" max-vertical-offset="1197" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/CssAstScanner.java">
@@ -1169,40 +991,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/CssConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="934" selection-end="934" vertical-scroll-proportion="0.17924528" vertical-offset="0" max-vertical-offset="530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/parser/CssGrammar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="5" selection-start="2576" selection-end="2576" vertical-scroll-proportion="-2.0138614" vertical-offset="3544" max-vertical-offset="7106">
-          <folding>
-            <element signature="e#0#12197#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="25" column="13" selection-start="934" selection-end="934" vertical-scroll-proportion="0.17924528" vertical-offset="0" max-vertical-offset="530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/CssCommentAnalyser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
-          <folding />
-        </state>
+        <state line="23" column="13" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/test/java/org/sonar/plugins/css/cpd/CssTokenizerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="33" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
-          <folding />
-        </state>
+        <state line="37" column="33" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/java/org/sonar/plugins/css/cpd/CssTokenizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="19" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1178">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1698#1716#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1698#1716#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1216,23 +1023,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css-checks/src/main/resources/org/sonar/l10n/css/rules/css/zero-units.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/utils/CssP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowSelectorsLikeRegEx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="28" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="608">
-          <folding />
-        </state>
+        <state line="21" column="13" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/BulletproofFontFace.java">
@@ -1242,25 +1038,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowOverspecificSelectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="13" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="1026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowUniversalSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="13" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sslr/sslr-core/1.19.2/sslr-core-1.19.2.jar!/org/sonar/sslr/parser/LexerlessGrammar.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="173" selection-end="173" vertical-scroll-proportion="0.19668737" vertical-offset="0" max-vertical-offset="483">
-          <folding />
-        </state>
+        <state line="6" column="22" selection-start="173" selection-end="173" vertical-scroll-proportion="0.19668737" vertical-offset="0" max-vertical-offset="483" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/VendorPrefixWithStandard.java">
@@ -1286,25 +1066,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css-checks/src/main/resources/org/sonar/l10n/css/rules/css/ids.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.035714" vertical-offset="141" max-vertical-offset="608">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowStarHack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="37" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/CheckList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="8" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="1026">
-          <folding>
-            <element signature="e#1264#1271#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.035714" vertical-offset="141" max-vertical-offset="608" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowUnderscoreHack.java">
@@ -1328,27 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/AllGradientDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="13" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="1330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/BewareOfBoxModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="58" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/resources/com/sonar/sqale/css-model.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="302" column="17" selection-start="9725" selection-end="9725" vertical-scroll-proportion="-14.04" vertical-offset="5387" max-vertical-offset="7467">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css-checks/src/test/resources/checks/overspecselector.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="10" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
@@ -1358,7 +1099,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sonar-check-api/3.0/sonar-check-api-3.0.jar!/org/sonar/check/Rule.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="-2.6" vertical-offset="68" max-vertical-offset="551">
+        <state line="8" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
@@ -1384,13 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/resources/org/sonar/l10n/css.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/parser/SassGrammar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="18" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="1165" max-vertical-offset="4123">
@@ -1398,16 +1132,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/mysoft/sonar/css/checks/DisallowMicrosoftFeatures.java">
+    <entry file="file://$PROJECT_DIR$/sonar-css-plugin/src/main/resources/com/sonar/sqale/css-model.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="51" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.3011811" vertical-offset="626" max-vertical-offset="1178">
+        <state line="315" column="17" selection-start="10173" selection-end="10173" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="7467">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowStarHack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="28" selection-start="1645" selection-end="1658" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/test/java/org/sonar/css/checks/DisallowStartHackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="13" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowSelectorsLikeRegEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="23" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.47637796" vertical-offset="100" max-vertical-offset="608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/css-checks.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/parser/CssGrammar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="320" column="17" selection-start="9762" selection-end="9768" vertical-scroll-proportion="0.0" vertical-offset="4888" max-vertical-offset="7106">
           <folding>
-            <element signature="e#0#1873#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#12197#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowOverspecificSelectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="13" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-squid/src/main/java/org/sonar/css/ast/visitors/SyntaxHighlighterVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="32" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="2147">
+          <folding>
+            <element signature="e#0#5018#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowUniversalSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="36" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="646">
+          <folding>
+            <element signature="e#0#1897#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.39337474" vertical-offset="0" max-vertical-offset="483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/resources/org/sonar/l10n/css.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/test/java/org/sonar/css/checks/AllGradientDefinitionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="13" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/test/resources/mysoft.checks/ClassSelectorRegExpCheck.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/BewareOfBoxModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="58" selection-start="1341" selection-end="1341" vertical-scroll-proportion="-0.41141734" vertical-offset="323" max-vertical-offset="2261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/sonar/sslr/sslr-core/1.19.2/sslr-core-1.19.2.jar!/com/sonar/sslr/impl/ast/AstWalker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="17" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.4207317" vertical-offset="382" max-vertical-offset="874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/AllGradientDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2133" selection-end="2133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/DisallowIdsInSelectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="24" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/sonar/css/checks/CheckList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1398" selection-end="1398" vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1083">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1279#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="430" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/test/java/mysoft/sonar/css/checks/ClassSelectorRegExpCheckTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="17" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-checks/src/main/java/org/mysoft/sonar/css/checks/ClassSelectorRegExpCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.5589942" vertical-offset="148" max-vertical-offset="893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
