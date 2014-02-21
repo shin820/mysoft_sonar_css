@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/css.iml" filepath="$PROJECT_DIR$/css.iml" />
+      <module fileurl="file://$PROJECT_DIR$/css-checks/css-checks.iml" filepath="$PROJECT_DIR$/css-checks/css-checks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/css-squid/css-squid.iml" filepath="$PROJECT_DIR$/css-squid/css-squid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sonar-css-plugin/sonar-css-plugin.iml" filepath="$PROJECT_DIR$/sonar-css-plugin/sonar-css-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sslr-css-toolkit/sslr-css-toolkit.iml" filepath="$PROJECT_DIR$/sslr-css-toolkit/sslr-css-toolkit.iml" />
+    </modules>
+  </component>
+</project>
+
