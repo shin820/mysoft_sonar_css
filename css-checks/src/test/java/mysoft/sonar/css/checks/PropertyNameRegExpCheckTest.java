@@ -31,7 +31,7 @@ import java.io.File;
 public class PropertyNameRegExpCheckTest {
 
     @Test
-    public void Should_find_css_selector_violation() {
+    public void Should_find_property_name_violation() {
         PropertyNameRegExpCheck check = new PropertyNameRegExpCheck();
         SourceFile file = TestHelper.scanSingleFile(new File(
                 "src/test/resources/mysoft.checks/PropertyNameRegExpCheck.css"), check);

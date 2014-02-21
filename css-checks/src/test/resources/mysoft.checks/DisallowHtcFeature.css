@@ -1,0 +1,7 @@
+.htc{
+  color: red;
+}
+
+.calendar {
+    -ms-behavior: url(my.htc);
+}

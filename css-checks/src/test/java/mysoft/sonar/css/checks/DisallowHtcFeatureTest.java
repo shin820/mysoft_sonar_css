@@ -21,22 +21,21 @@ package mysoft.sonar.css.checks;
 
 import com.sonar.sslr.squid.checks.CheckMessagesVerifier;
 import org.junit.Test;
-import org.mysoft.sonar.css.checks.IdSelectorRegExpCheck;
-import org.mysoft.sonar.css.checks.TypeSelectorRegExpCheck;
+import org.mysoft.sonar.css.checks.ClassSelectorRegExpCheck;
+import org.mysoft.sonar.css.checks.DisallowHtcFeature;
 import org.sonar.css.checks.TestHelper;
 import org.sonar.squid.api.SourceFile;
 
 import java.io.File;
 
-public class TypeSelectorRegExpCheckTest {
+public class DisallowHtcFeatureTest {
 
     @Test
-    public void Should_find_type_selector_violation() {
-        TypeSelectorRegExpCheck check = new TypeSelectorRegExpCheck();
+    public void Should_find_htc_violation() {
+        DisallowHtcFeature check = new DisallowHtcFeature();
         SourceFile file = TestHelper.scanSingleFile(new File(
-                "src/test/resources/mysoft.checks/TypeSelectorRegExpCheck.css"), check);
+                "src/test/resources/mysoft.checks/DisallowHtcFeature.css"), check);
         CheckMessagesVerifier.verify(file.getCheckMessages()).next()
-                .atLine(3).withMessage("类型选择器UL与正则表达式" + check.regExpression + "不匹配");
+                .atLine(6).withMessage("不允许使用Htc");
     }
-
 }
