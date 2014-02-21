@@ -35,7 +35,7 @@ public class ClassSelectorRegExpCheckTest {
         SourceFile file = TestHelper.scanSingleFile(new File(
                 "src/test/resources/mysoft.checks/ClassSelectorRegExpCheck.css"), check);
         CheckMessagesVerifier.verify(file.getCheckMessages()).next()
-                .atLine(1).withMessage("类选择器_abc与正则表达式^[a-z][a-z_-]+$不匹配");
+                .atLine(1).withMessage("类选择器_abc与正则表达式^[a-z][0-9a-z_-]+$不匹配");
     }
 
 }
