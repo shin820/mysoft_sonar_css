@@ -25,20 +25,20 @@ import org.sonar.css.checks.CheckList;
 import org.sonar.css.parser.CssGrammar;
 
 /**
- * mysoft rule : 类选择器正则匹配检查
+ * mysoft rule : ID选择器正则匹配检查
  *
  * @author liux09
  */
-@Rule(key = "ClassSelectorRegExpCheck",
-        name = "Mysoft rule : Class Selector Check by Regex Expression",
-        description = "通过正则表达式指定类选择器的合法格式",
+@Rule(key = "IdSelectorRegExpCheck",
+        name = "Mysoft rule : ID Selector Check by Regex Expression",
+        description = "通过正则表达式指定ID选择器的合法格式",
         priority = Priority.MAJOR, cardinality = Cardinality.SINGLE)
 @BelongsToProfile(title = CheckList.REPOSITORY_NAME, priority = Priority.MAJOR)
-public class ClassSelectorRegExpCheck extends BaseRegExpCehck {
+public class IdSelectorRegExpCheck extends BaseRegExpCehck {
 
     @Override
     public void init() {
-        subscribeTo(CssGrammar.classSelector);
+        subscribeTo(CssGrammar.idSelector);
     }
 
     @Override
@@ -48,6 +48,6 @@ public class ClassSelectorRegExpCheck extends BaseRegExpCehck {
 
     @Override
     protected String getViolationMessage(AstNode node) {
-        return "类选择器" + node.getTokenValue() + "与正则表达式" + regExpression + "不匹配";
+        return "ID选择器" + node.getTokenValue() + "与正则表达式" + regExpression + "不匹配";
     }
 }

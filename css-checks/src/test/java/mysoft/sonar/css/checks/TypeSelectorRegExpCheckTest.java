@@ -21,21 +21,22 @@ package mysoft.sonar.css.checks;
 
 import com.sonar.sslr.squid.checks.CheckMessagesVerifier;
 import org.junit.Test;
-import org.mysoft.sonar.css.checks.ClassSelectorRegExpCheck;
+import org.mysoft.sonar.css.checks.IdSelectorRegExpCheck;
+import org.mysoft.sonar.css.checks.TypeSelectorRegExpCheck;
 import org.sonar.css.checks.TestHelper;
 import org.sonar.squid.api.SourceFile;
 
 import java.io.File;
 
-public class ClassSelectorRegExpCheckTest {
+public class TypeSelectorRegExpCheckTest {
 
     @Test
-    public void Should_find_css_selector_violation() {
-        ClassSelectorRegExpCheck check = new ClassSelectorRegExpCheck();
+    public void Should_find_id_selector_violation() {
+        TypeSelectorRegExpCheck check = new TypeSelectorRegExpCheck();
         SourceFile file = TestHelper.scanSingleFile(new File(
-                "src/test/resources/mysoft.checks/ClassSelectorRegExpCheck.css"), check);
+                "src/test/resources/mysoft.checks/TypeSelectorRegExpCheck.css"), check);
         CheckMessagesVerifier.verify(file.getCheckMessages()).next()
-                .atLine(1).withMessage("类选择器_abc与正则表达式" + check.regExpression + "不匹配");
+                .atLine(3).withMessage("类型选择器UL与正则表达式" + check.regExpression + "不匹配");
     }
 
 }

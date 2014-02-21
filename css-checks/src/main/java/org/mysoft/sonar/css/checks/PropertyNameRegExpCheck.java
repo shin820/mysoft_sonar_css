@@ -20,34 +20,37 @@
 package org.mysoft.sonar.css.checks;
 
 import com.sonar.sslr.api.AstNode;
-import org.sonar.check.*;
+import org.sonar.check.BelongsToProfile;
+import org.sonar.check.Cardinality;
+import org.sonar.check.Priority;
+import org.sonar.check.Rule;
 import org.sonar.css.checks.CheckList;
 import org.sonar.css.parser.CssGrammar;
 
 /**
- * mysoft rule : 类选择器正则匹配检查
+ * mysoft rule : 属性名称正则匹配检查
  *
  * @author liux09
  */
-@Rule(key = "ClassSelectorRegExpCheck",
-        name = "Mysoft rule : Class Selector Check by Regex Expression",
-        description = "通过正则表达式指定类选择器的合法格式",
+@Rule(key = "PropertyNameRegExpCheck",
+        name = "Mysoft rule : Property Name Check by Regex Expression",
+        description = "通过正则表达式指定属性名的合法格式",
         priority = Priority.MAJOR, cardinality = Cardinality.SINGLE)
 @BelongsToProfile(title = CheckList.REPOSITORY_NAME, priority = Priority.MAJOR)
-public class ClassSelectorRegExpCheck extends BaseRegExpCehck {
+public class PropertyNameRegExpCheck extends BaseRegExpCehck {
 
     @Override
     public void init() {
-        subscribeTo(CssGrammar.classSelector);
+        subscribeTo(CssGrammar.property);
     }
 
     @Override
     protected CssGrammar getIdentityType() {
-        return CssGrammar.identNoWS;
+        return CssGrammar.ident;
     }
 
     @Override
     protected String getViolationMessage(AstNode node) {
-        return "类选择器" + node.getTokenValue() + "与正则表达式" + regExpression + "不匹配";
+        return "属性名称" + node.getTokenValue() + "与正则表达式" + regExpression + "不匹配";
     }
 }

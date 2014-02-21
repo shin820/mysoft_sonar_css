@@ -22,20 +22,22 @@ package mysoft.sonar.css.checks;
 import com.sonar.sslr.squid.checks.CheckMessagesVerifier;
 import org.junit.Test;
 import org.mysoft.sonar.css.checks.ClassSelectorRegExpCheck;
+import org.mysoft.sonar.css.checks.IdSelectorRegExpCheck;
 import org.sonar.css.checks.TestHelper;
 import org.sonar.squid.api.SourceFile;
 
 import java.io.File;
 
-public class ClassSelectorRegExpCheckTest {
+public class IdSelectorRegExpCheckTest {
 
     @Test
-    public void Should_find_css_selector_violation() {
-        ClassSelectorRegExpCheck check = new ClassSelectorRegExpCheck();
+    public void Should_find_id_selector_violation() {
+        IdSelectorRegExpCheck check = new IdSelectorRegExpCheck();
         SourceFile file = TestHelper.scanSingleFile(new File(
-                "src/test/resources/mysoft.checks/ClassSelectorRegExpCheck.css"), check);
-        CheckMessagesVerifier.verify(file.getCheckMessages()).next()
-                .atLine(1).withMessage("类选择器_abc与正则表达式" + check.regExpression + "不匹配");
+                "src/test/resources/mysoft.checks/IdSelectorRegExpCheck.css"), check);
+        CheckMessagesVerifier.verify(file.getCheckMessages())
+                .next().atLine(1).withMessage("ID选择器_abc与正则表达式" + check.regExpression + "不匹配")
+                .next().atLine(5).withMessage("ID选择器Abc与正则表达式" + check.regExpression + "不匹配");
     }
 
 }

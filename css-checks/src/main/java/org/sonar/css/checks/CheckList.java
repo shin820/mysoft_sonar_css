@@ -20,7 +20,7 @@
 package org.sonar.css.checks;
 
 import com.google.common.collect.ImmutableList;
-import org.mysoft.sonar.css.checks.ClassSelectorRegExpCheck;
+import org.mysoft.sonar.css.checks.*;
 
 import java.util.Collection;
 
@@ -38,6 +38,9 @@ public final class CheckList {
         return ImmutableList.<Class>of(
         /*Mysoft rules begin*/
                 ClassSelectorRegExpCheck.class,
+                IdSelectorRegExpCheck.class,
+                TypeSelectorRegExpCheck.class,
+                PropertyNameRegExpCheck.class,
         /*Mysoft rules end*/
 
                 AllGradientDefinitions.class,
