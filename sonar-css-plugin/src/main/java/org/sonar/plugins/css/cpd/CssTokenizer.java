@@ -23,6 +23,7 @@ import com.sonar.sslr.api.AstNode;
 import com.sonar.sslr.api.GenericTokenType;
 import com.sonar.sslr.api.Token;
 import com.sonar.sslr.impl.Parser;
+import mysoft.sonar.plugins.css.FileEncodingConveter;
 import net.sourceforge.pmd.cpd.SourceCode;
 import net.sourceforge.pmd.cpd.TokenEntry;
 import net.sourceforge.pmd.cpd.Tokenizer;
@@ -47,10 +48,13 @@ public class CssTokenizer implements Tokenizer {
         String fileName = source.getFileName();
         Parser<LexerlessGrammar> parser = new ParserAdapter<LexerlessGrammar>(charset, CssGrammar.createGrammar());
 
+        //FileEncodingConveter.Convert(fileName);
+
         AstNode result;
         try {
            result = parser.parse(new File(fileName));
         } catch (Exception ex) {
+            //error meesage will be catch by inner log system
             return;
         }
 

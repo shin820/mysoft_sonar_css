@@ -22,6 +22,7 @@ package org.sonar.plugins.css;
 import com.google.common.collect.Lists;
 import com.sonar.sslr.squid.AstScanner;
 import com.sonar.sslr.squid.SquidAstVisitor;
+import mysoft.sonar.plugins.css.FileEncodingConveter;
 import org.sonar.api.batch.Sensor;
 import org.sonar.api.batch.SensorContext;
 import org.sonar.api.checks.AnnotationCheckFactory;
@@ -52,79 +53,85 @@ import java.util.List;
 
 public class CssSquidSensor implements Sensor {
 
-  private final AnnotationCheckFactory annotationCheckFactory;
+    private final AnnotationCheckFactory annotationCheckFactory;
 
-  private Project project;
-  private SensorContext context;
-  private AstScanner<LexerlessGrammar> scanner;
-  private ResourcePerspectives resourcePerspectives;
-  private ModuleFileSystem moduleFileSystem;
+    private Project project;
+    private SensorContext context;
+    private AstScanner<LexerlessGrammar> scanner;
+    private ResourcePerspectives resourcePerspectives;
+    private ModuleFileSystem moduleFileSystem;
 
-  public CssSquidSensor(RulesProfile profile, FileLinesContextFactory fileLinesContextFactory, ResourcePerspectives resourcePerspectives, ModuleFileSystem moduleFileSystem) {
-    this.annotationCheckFactory = AnnotationCheckFactory.create(profile,
-        CheckList.REPOSITORY_KEY, CheckList.getChecks());
-    this.resourcePerspectives = resourcePerspectives;
-    this.moduleFileSystem = moduleFileSystem;
-  }
-
-  public boolean shouldExecuteOnProject(Project project) {
-    return Css.KEY.equals(project.getLanguage().getKey());
-  }
-
-  public void analyse(Project project, SensorContext context) {
-    this.project = project;
-    this.context = context;
-
-    Collection<SquidAstVisitor<LexerlessGrammar>> squidChecks = annotationCheckFactory.getChecks();
-    List<SquidAstVisitor<LexerlessGrammar>> visitors = Lists.newArrayList(squidChecks);
-    this.scanner = CssAstScanner.create(moduleFileSystem, resourcePerspectives, visitors
-        .toArray(new SquidAstVisitor[visitors.size()]));
-    scanner.scanFiles(moduleFileSystem.files(Css.sourceQuery));
-
-    Collection<SourceCode> squidSourceFiles = scanner.getIndex().search(
-        new QueryByType(SourceFile.class));
-    save(squidSourceFiles);
-  }
-
-  private void save(Collection<SourceCode> squidSourceFiles) {
-    for (SourceCode squidSourceFile : squidSourceFiles) {
-      SourceFile squidFile = (SourceFile) squidSourceFile;
-
-      File sonarFile = File.fromIOFile(new java.io.File(squidFile.getKey()), moduleFileSystem.sourceDirs());
-
-      saveMeasures(sonarFile, squidFile);
-      saveViolations(sonarFile, squidFile);
+    public CssSquidSensor(RulesProfile profile, FileLinesContextFactory fileLinesContextFactory, ResourcePerspectives resourcePerspectives, ModuleFileSystem moduleFileSystem) {
+        this.annotationCheckFactory = AnnotationCheckFactory.create(profile,
+                CheckList.REPOSITORY_KEY, CheckList.getChecks());
+        this.resourcePerspectives = resourcePerspectives;
+        this.moduleFileSystem = moduleFileSystem;
     }
-  }
 
-  private void saveMeasures(File sonarFile, SourceFile squidFile) {
-    context.saveMeasure(sonarFile, CoreMetrics.FILES, squidFile.getDouble(CssMetric.FILES));
-    context.saveMeasure(sonarFile, CoreMetrics.LINES, squidFile.getDouble(CssMetric.LINES));
-    context.saveMeasure(sonarFile, CoreMetrics.NCLOC, squidFile.getDouble(CssMetric.LINES_OF_CODE));
-    context.saveMeasure(sonarFile, CoreMetrics.FUNCTIONS, squidFile.getDouble(CssMetric.AT_RULES)+squidFile.getDouble(CssMetric.RULE_SETS));
-    context.saveMeasure(sonarFile, CoreMetrics.STATEMENTS, squidFile.getDouble(CssMetric.STATEMENTS));
-    context.saveMeasure(sonarFile, CoreMetrics.COMMENT_LINES, squidFile.getDouble(CssMetric.COMMENT_LINES));
-  }
-
-  private void saveViolations(File sonarFile, SourceFile squidFile) {
-    Collection<CheckMessage> messages = squidFile.getCheckMessages();
-    if (messages != null) {
-      for (CheckMessage message : messages) {
-        ActiveRule activeRule = annotationCheckFactory.getActiveRule(message.getCheck());
-        Issuable issuable = resourcePerspectives.as(Issuable.class, sonarFile);
-        Issue issue = issuable.newIssueBuilder()
-            .ruleKey(RuleKey.of(activeRule.getRepositoryKey(), activeRule.getRuleKey()))
-            .line(message.getLine())
-            .message(message.formatDefaultMessage())
-            .build();
-        issuable.addIssue(issue);
-      }
+    public boolean shouldExecuteOnProject(Project project) {
+        return Css.KEY.equals(project.getLanguage().getKey());
     }
-  }
 
-  @Override
-  public String toString() {
-    return getClass().getSimpleName();
-  }
+    public void analyse(Project project, SensorContext context) {
+        this.project = project;
+        this.context = context;
+
+        Collection<SquidAstVisitor<LexerlessGrammar>> squidChecks = annotationCheckFactory.getChecks();
+        List<SquidAstVisitor<LexerlessGrammar>> visitors = Lists.newArrayList(squidChecks);
+        this.scanner = CssAstScanner.create(moduleFileSystem, resourcePerspectives, visitors
+                .toArray(new SquidAstVisitor[visitors.size()]));
+
+        /*Convet encoding incase parse error for window 'UTF-8'*/
+        for (java.io.File file : moduleFileSystem.files(Css.sourceQuery)) {
+            FileEncodingConveter.Convert(file.getPath());
+        }
+
+        scanner.scanFiles(moduleFileSystem.files(Css.sourceQuery));
+
+        Collection<SourceCode> squidSourceFiles = scanner.getIndex().search(
+                new QueryByType(SourceFile.class));
+        save(squidSourceFiles);
+    }
+
+    private void save(Collection<SourceCode> squidSourceFiles) {
+        for (SourceCode squidSourceFile : squidSourceFiles) {
+            SourceFile squidFile = (SourceFile) squidSourceFile;
+
+            File sonarFile = File.fromIOFile(new java.io.File(squidFile.getKey()), moduleFileSystem.sourceDirs());
+
+            saveMeasures(sonarFile, squidFile);
+            saveViolations(sonarFile, squidFile);
+        }
+    }
+
+    private void saveMeasures(File sonarFile, SourceFile squidFile) {
+        context.saveMeasure(sonarFile, CoreMetrics.FILES, squidFile.getDouble(CssMetric.FILES));
+        context.saveMeasure(sonarFile, CoreMetrics.LINES, squidFile.getDouble(CssMetric.LINES));
+        context.saveMeasure(sonarFile, CoreMetrics.NCLOC, squidFile.getDouble(CssMetric.LINES_OF_CODE));
+        context.saveMeasure(sonarFile, CoreMetrics.FUNCTIONS, squidFile.getDouble(CssMetric.AT_RULES) + squidFile.getDouble(CssMetric.RULE_SETS));
+        context.saveMeasure(sonarFile, CoreMetrics.STATEMENTS, squidFile.getDouble(CssMetric.STATEMENTS));
+        context.saveMeasure(sonarFile, CoreMetrics.COMMENT_LINES, squidFile.getDouble(CssMetric.COMMENT_LINES));
+    }
+
+    private void saveViolations(File sonarFile, SourceFile squidFile) {
+        Collection<CheckMessage> messages = squidFile.getCheckMessages();
+        if (messages != null) {
+            for (CheckMessage message : messages) {
+                ActiveRule activeRule = annotationCheckFactory.getActiveRule(message.getCheck());
+                Issuable issuable = resourcePerspectives.as(Issuable.class, sonarFile);
+                Issue issue = issuable.newIssueBuilder()
+                        .ruleKey(RuleKey.of(activeRule.getRepositoryKey(), activeRule.getRuleKey()))
+                        .line(message.getLine())
+                        .message(message.formatDefaultMessage())
+                        .build();
+                issuable.addIssue(issue);
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
 
 }
