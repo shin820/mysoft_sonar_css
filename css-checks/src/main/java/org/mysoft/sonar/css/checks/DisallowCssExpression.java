@@ -21,35 +21,33 @@ package org.mysoft.sonar.css.checks;
 
 import com.sonar.sslr.api.AstNode;
 import com.sonar.sslr.squid.checks.SquidCheck;
-import org.sonar.check.*;
+import org.sonar.check.BelongsToProfile;
+import org.sonar.check.Cardinality;
+import org.sonar.check.Priority;
+import org.sonar.check.Rule;
 import org.sonar.css.checks.CheckList;
 import org.sonar.css.parser.CssGrammar;
 import org.sonar.sslr.parser.LexerlessGrammar;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 /**
  * Created by liux09 on 14-2-21.
  */
-@Rule(key = "DisallowHtcFeature",
-        name = "Mysoft rule : Disallow Htc Feature",
-        description = "不允许使用Htc",
+@Rule(key = "DisallowCssExpression",
+        name = "Mysoft rule : Disallow CSS Expression",
+        description = "不允许使用CSS表达式",
         priority = Priority.MAJOR, cardinality = Cardinality.SINGLE)
 @BelongsToProfile(title = CheckList.REPOSITORY_NAME, priority = Priority.MAJOR)
-public class DisallowHtcFeature extends SquidCheck<LexerlessGrammar> {
+public class DisallowCssExpression extends SquidCheck<LexerlessGrammar> {
 
     @Override
     public void init() {
-        subscribeTo(CssGrammar.delim);
+        subscribeTo(CssGrammar.value);
     }
 
     @Override
     public void visitNode(AstNode astNode) {
-
-        AstNode htcNode = astNode.getNextAstNode();
-        if (htcNode.getType() == CssGrammar.ident && htcNode.getTokenValue().toLowerCase().contentEquals("htc")) {
-            getContext().createLineViolation(this, "不允许使用Htc", astNode);
+        if (astNode.getType() == CssGrammar.value && astNode.getTokenValue().toLowerCase().contentEquals("expression")) {
+            getContext().createLineViolation(this, "不允许使用CSS表达式", astNode);
         }
     }
 }

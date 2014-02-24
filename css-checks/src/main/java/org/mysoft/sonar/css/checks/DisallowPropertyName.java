@@ -32,24 +32,31 @@ import java.util.regex.Pattern;
 /**
  * Created by liux09 on 14-2-21.
  */
-@Rule(key = "DisallowHtcFeature",
-        name = "Mysoft rule : Disallow Htc Feature",
-        description = "不允许使用Htc",
+@Rule(key = "DisallowPropertyName",
+        name = "Mysoft rule : Disallow Property Name",
+        description = "属性名包含不允许使用的关键字",
         priority = Priority.MAJOR, cardinality = Cardinality.SINGLE)
 @BelongsToProfile(title = CheckList.REPOSITORY_NAME, priority = Priority.MAJOR)
-public class DisallowHtcFeature extends SquidCheck<LexerlessGrammar> {
+public class DisallowPropertyName extends SquidCheck<LexerlessGrammar> {
+
+    protected static final String DEFAULT_REG_EXPRESSION = "^-ms-.*$";
+    @RuleProperty(
+            key = "reg_expressiosn",
+            defaultValue = DEFAULT_REG_EXPRESSION)
+    public String regExpression = DEFAULT_REG_EXPRESSION;
 
     @Override
     public void init() {
-        subscribeTo(CssGrammar.delim);
+        subscribeTo(CssGrammar.property);
     }
 
     @Override
     public void visitNode(AstNode astNode) {
-
-        AstNode htcNode = astNode.getNextAstNode();
-        if (htcNode.getType() == CssGrammar.ident && htcNode.getTokenValue().toLowerCase().contentEquals("htc")) {
-            getContext().createLineViolation(this, "不允许使用Htc", astNode);
+        Pattern pattern = Pattern.compile(regExpression);
+        Matcher matcher = pattern.matcher(astNode.getTokenValue());
+        if (matcher.find()) {
+            String message = "属性名" + astNode.getTokenValue() + "包含不允许使用的关键字";
+            getContext().createLineViolation(this, message, astNode);
         }
     }
 }

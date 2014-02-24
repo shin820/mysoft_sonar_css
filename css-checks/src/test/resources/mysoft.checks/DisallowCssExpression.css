@@ -1,0 +1,5 @@
+
+#main {
+    background-color: expression(
+        (new Date()).getHours()%2 ? "#000" : "#fff"
+    ); }

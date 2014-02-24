@@ -33,7 +33,7 @@ import java.util.regex.Pattern;
  */
 public abstract class BaseRegExpCehck extends SquidCheck<LexerlessGrammar> {
 
-    protected static final String DEFAULT_REG_EXPRESSION = "^((?<=[a-z]))[0-9a-z_-]+$";
+    protected static final String DEFAULT_REG_EXPRESSION = "^[a-z][\\s0-9a-z_-]*$";
     @RuleProperty(
             key = "reg_expressiosn",
             defaultValue = DEFAULT_REG_EXPRESSION)

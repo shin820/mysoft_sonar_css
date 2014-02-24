@@ -41,6 +41,9 @@ public final class CheckList {
                 IdSelectorRegExpCheck.class,
                 TypeSelectorRegExpCheck.class,
                 PropertyNameRegExpCheck.class,
+                DisallowHtcFeature.class,
+                DisallowCssExpression.class,
+                DisallowPropertyName.class,
         /*Mysoft rules end*/
 
                 AllGradientDefinitions.class,
